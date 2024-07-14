@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ALVAREZ22102058EF202401</string>
+    <string name="RegistroTittle">Registro de Equipos</string>
+    <string name="HintNombreEquipo">Nombre del equipo</string>
+    <string name="HintEscudoUrl">URL del escudo del equipo</string>
+    <string name="BotonGuardar">Guardar</string>
+    <string name="btRegisEnfre">Registrar Enfrentamientos</string>
+    <string name="ListaEnfrente">Listado de Enfrentamientos</string>
+</resources>
