@@ -6,4 +6,11 @@
     <string name="BotonGuardar">Guardar</string>
     <string name="btRegisEnfre">Registrar Enfrentamientos</string>
     <string name="ListaEnfrente">Listado de Enfrentamientos</string>
+    <string name="RegEnfrTitulo">Registro de Enfrentamientos</string>
+    <string name="cuotastitulo">Cuotas</string>
+    <string name="local">Local(L)</string>
+    <string name="empate">Empate(X)</string>
+    <string name="visita">Visita(V)</string>
+    <string name="registrarEnfre">Registrar</string>
+    <string name="regEquipo">Registrar Equipos</string>
 </resources>

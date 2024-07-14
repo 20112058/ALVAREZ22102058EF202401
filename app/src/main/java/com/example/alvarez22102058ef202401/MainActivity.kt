@@ -7,13 +7,11 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.alvarez22102058ef202401.model.TeamModel
-import com.google.android.material.snackbar.Snackbar
-import com.google.firebase.Timestamp
 import com.google.firebase.firestore.FirebaseFirestore
-import java.util.TimeZone
 
 class MainActivity : AppCompatActivity() {
 
@@ -35,12 +33,17 @@ class MainActivity : AppCompatActivity() {
         etNombreTeam = findViewById(R.id.etNombreTeam)
         etUrlEscudo = findViewById(R.id.etUrlEscudo)
         btGuardar = findViewById(R.id.btGuardar)
-        btRegEnfr = findViewById(R.id.btRegEnfr)
-        btListEnfr = findViewById(R.id.btListEnfr)
+        btRegEnfr = findViewById(R.id.btActRegEnfr)
+        btListEnfr = findViewById(R.id.btActListEnfr)
 
         btGuardar.setOnClickListener {
             addTeam()
         }
+
+       /* btRegEnfr.setOnClickListener {
+            val intent = Intent(requireContext(), RegEnfrenActivity::class.java)
+            startActivity(intent)
+        }*/
 
     }
 
@@ -74,7 +77,7 @@ class MainActivity : AppCompatActivity() {
             }
     }
 
-    fun limpiarCampos() {
+    private fun limpiarCampos() {
         etNombreTeam.text.clear()
         etUrlEscudo.text.clear()
 
